@@ -1,9 +1,9 @@
-NotificationExtention
+NotificationExtension
 =====================
 
-Android AIR native extention for show Alert and Toast sample.
+Android AIR native extension for show Alert and Toast sample.
 
-With this simple extention you can show Android native Alert with "ok" button and Android native Toast in your mobile AIR application.
+With this simple extension you can show Android native Alert with "ok" button and Android native Toast in your mobile AIR application.
 
 How to use:
 
