@@ -2,6 +2,7 @@ package com.illuzor.notificationextension;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.util.Log;
 
 import com.adobe.fre.FREContext;
 import com.adobe.fre.FREFunction;
@@ -29,8 +30,11 @@ public class ShowAlertFuntion implements FREFunction {
 			AlertDialog alertDialog = alertBuilder.create();
 			alertDialog.show();
 			
+			Log.i("Notification Extension", "Alert OK");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
+			Log.i("Notification Extension", "Alert Error");
 		} 
 
 		return null;

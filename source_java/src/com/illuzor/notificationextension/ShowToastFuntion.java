@@ -1,6 +1,7 @@
 package com.illuzor.notificationextension;
 
 import android.content.Context;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.adobe.fre.FREContext;
@@ -17,8 +18,11 @@ public class ShowToastFuntion implements FREFunction {
 			Toast toast = Toast.makeText(toastContext, message, Toast.LENGTH_SHORT);
 			toast.show();
 			
+			Log.i("Notification Extension", "Toast OK");
+			
 		} catch (Exception e) {
 			e.printStackTrace();
+			Log.i("Notification Extension", "Toast Error");
 		} 
 		
 		return null;
